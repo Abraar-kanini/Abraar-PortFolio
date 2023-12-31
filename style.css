@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+
+@layer keyframes {
+    /* Define your custom keyframes */
+    @keyframes rise {
+        0% {
+            transform: skewY(10deg) translateY(0);
+        }
+        50% {
+            transform: skewY(10deg) translateY(-50%);
+        }
+        100% {
+            transform: skewY(0) translateY(-100%);
+        }
+    }
+}
+
+@layer utilities {
+    /* Apply the custom animation */
+    .animate-rise {
+        animation: rise 2s linear forwards; /* Adjust duration as needed */
+        /* display: none */
+    }
+
+    /* Define the rounded-egg custom utility */
+    .rounded-egg {
+        border-radius: 50% / 40% 60% 50% 60%; /* Adjust percentages for the desired upside-down egg shape */
+
+
+    }
+    .blur {
+        filter: blur(4px);
+      }
+      /* Apply transition to the image source change */
+#projectImg {
+    transition: opacity 0.5s ease-in-out;
+  }
+  .invert{
+    filter: invert(1)
+  }
+  /* Define the 'purple' class to change color to purple */
+.purple {
+    color: #6e57e0; /* Change to any other style you desire */
+  }
+  
+      
+    
+      
+      
+}
+
+/* Add any remaining Tailwind directives */
+@tailwind utilities;
