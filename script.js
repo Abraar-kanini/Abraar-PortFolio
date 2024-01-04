@@ -200,3 +200,16 @@ element.scrollIntoView({
 }
 }
 
+
+function toggleOpen() {
+  const nav = document.getElementById("nav");
+  let isTrue = nav.classList.contains("hidden");
+  if (isTrue) {
+    nav.classList.remove("hidden");
+    nav.classList.add("none");
+  } else {
+    nav.classList.remove("none");
+    nav.classList.add("hidden");
+  }
+}
+

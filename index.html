@@ -17,22 +17,39 @@
   </head>
   <body class="m-0 p-0 bg-[#fbfbfe]">
     <!-- navigational bar start -->
-<nav >
-    <div class="w-[98.8vw] h-[10vh] border border-black abbu  ">
-      <div class="flex justify-around my-5 font-medium font-size-13 ">
-        <h2>Abraaar</h2>
-        <ul class="flex space-x-9 flex-wrap">
+    <nav >
+      <div
+        class="border border-black w-[100vw] h-[10vh] flex justify-between items-center sm:border sm:border-black sm:w-[100vw] sm:h-[10vh] sm:flex sm:justify-evenly sm:items-center "
+      >
+        <h1 class="font-bold"> Abraar</h1>
+        <ul
+          class="hidden sm:flex sm:space-x-9 sm:justify-center sm:items-center font-semibold"
+        >
           <li>Home</li>
           <li>About</li>
           <li>Skills</li>
-          <li>Service</li>
-          <li>roject</li>
-          <li>Contact</li>
+          <li>Services</li>
+          <li>Projects</li>
+          <li>Contact Us </li>
         </ul>
-        
+        <ul class="sm:hidden">
+          <li onclick="toggleOpen()">
+            <span class="material-symbols-outlined"> menu </span>
+          </li>
+        </ul>
       </div>
-    </div>
-  </nav>
+      <div class="border border-black w-[100vw] hidden sm:hidden " id="nav">
+        <ul class="flex flex-col">
+          <li></li>
+          <li class="border border-black text-center">Home</li>
+          <li class="border border-black text-center">About</li>
+          <li class="border border-black text-center">Sills</li>
+          <li class="border border-black text-center">Services</li>
+          <li class="border border-black text-center">Projects</li>
+          <li class="border border-black text-center">Contact Us</li>
+        </ul>
+      </div>
+    </nav>
     <!-- navigational bar end -->
 
     <!-- about me section start -->
@@ -426,15 +443,15 @@
     <!-- project section start -->
 
     <div
-      class=" border outline-8 border-white shadow-xl m-auto flex p-5 rounded-xl abbu
-      md:w-[60vw] md:border md:outline-8 md:border-white md:shadow-xl md:m-auto md:flex md:p-5 md:rounded-xl md:abbu"
+      class=" border outline-8 border-white shadow-xl m-auto flex flex-col p-5 rounded-xl abbu
+      md:w-[60vw] md:border md:outline-8 md:border-white md:shadow-xl md:m-auto md:flex-row md:p-5 md:rounded-xl md:abbu"
     >
-      <div class="w-[50%]">
+      <div class="md:w-[50%]">
         <div class="w-[80%] border-9 border-white rounded-lg shadow-lg">
           <img  src="project2.svg" alt="project-1" id="projectImg" />
         </div>
       </div>
-      <div class="w-[50%] space-y-6 relative">
+      <div class="md:w-[50%] md:space-y-6 md:relative">
         <h1 class="font-bold text-lg" id="projectHeading">Landing Pages</h1>
         <p class="text-gray-500" id="projectContent">
           Compelling landing pages that drives conversions and engage your
