@@ -122,15 +122,15 @@ function resetCardContent() {
       if (counter === 1) {
         projectHeading.innerText = "Skill Assessment";
         projectContent.innerText = "A skill assessment platform allowing employees to take tests, view their scores, and compare results with peers for performance evaluation and growth tracking";
-        projectLink.href = "https://google.com";
+        projectLink.href = "https://github.com/Abraar-kanini/Big-Bang-Assessment3";
       } else if (counter === 2) {
         projectHeading.innerText = "Travel Protal";
         projectContent.innerText = "A comprehensive travel portal enabling users to book tours, agents to create packages, and admin control to grant agent access for seamless tour management and bookings.";
-        projectLink.href = "https://facebook.com";
+        projectLink.href = "https://github.com/Abraar-kanini/Big-Bang-Assessment3";
       } else if (counter === 3) {
         projectHeading.innerText = "Hotel Booking System";
         projectContent.innerText ="A robust hotel booking system with a backend API , facilitating seamless interactions for managing hotel reservations, guest information, and room availability.";
-        projectLink.href = "https://facebook.com";
+        projectLink.href = "https://github.com/Abraar-kanini/Hotel_Booking_System";
       }
 
       // Apply fade-in effect after changing image
@@ -173,7 +173,7 @@ if (dataType === 'education') {
 
 function downloadResume() {
 // Replace 'path_to_your_pdf_file.pdf' with the actual path to your PDF file
-const fileUrl = 'Abraar J(Product Engineer).pdf';
+const fileUrl = 'Abraar(Resume).pdf';
 
 // Create an anchor element
 const link = document.createElement('a');
@@ -191,14 +191,7 @@ document.body.removeChild(link);
 }
 
 
-function scrollToDown() {
-const element = document.querySelector('.scrollToDown');
-if (element) {
-element.scrollIntoView({
-  behavior: 'smooth'
-});
-}
-}
+
 
 
 function toggleOpen() {

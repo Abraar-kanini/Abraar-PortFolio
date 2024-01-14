@@ -12,25 +12,27 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="icon" href="abraar.jpeg" type="image/jpeg">
 
-    <title>Document</title>
+
+    <title>Abraar PortFolio</title>
   </head>
   <body class="m-0 p-0 bg-[#fbfbfe]">
     <!-- navigational bar start -->
-    <nav >
+    <nav>
       <div
-        class="border border-black w-[100vw] h-[10vh] flex justify-between items-center sm:border sm:border-black sm:w-[100vw] sm:h-[10vh] sm:flex sm:justify-evenly sm:items-center "
+        class="w-[100vw] h-[10vh] flex justify-between items-center sm:w-[100vw] sm:h-[10vh] sm:flex sm:justify-evenly sm:items-center"
       >
-        <h1 class="font-bold"> Abraar</h1>
+        <h1 class="font-bold">Abraar</h1>
         <ul
           class="hidden sm:flex sm:space-x-9 sm:justify-center sm:items-center font-semibold"
         >
           <li>Home</li>
-          <li>About</li>
-          <li>Skills</li>
-          <li>Services</li>
-          <li>Projects</li>
-          <li>Contact Us </li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contactus">Contact Us</a></li>
         </ul>
         <ul class="sm:hidden">
           <li onclick="toggleOpen()">
@@ -38,15 +40,15 @@
           </li>
         </ul>
       </div>
-      <div class="border border-black w-[100vw] hidden sm:hidden " id="nav">
+      <div class="w-[100vw] hidden sm:hidden" id="nav">
         <ul class="flex flex-col">
           <li></li>
-          <li class="border border-black text-center">Home</li>
-          <li class="border border-black text-center">About</li>
-          <li class="border border-black text-center">Sills</li>
-          <li class="border border-black text-center">Services</li>
-          <li class="border border-black text-center">Projects</li>
-          <li class="border border-black text-center">Contact Us</li>
+          <li class=" text-center">Home</li>
+          <li class="text-center"><a href="#about">About</a></li>
+          <li class="text-center"><a href="#skills">Skills</a></li>
+          <li class="text-center"><a href="#service">Services</a></li>
+          <li class="text-center"><a href="#project">Projects</a></li>
+          <li class="text-center"><a href="#contactus">Contact Us</a></li>
         </ul>
       </div>
     </nav>
@@ -54,38 +56,38 @@
 
     <!-- about me section start -->
     <div
-      class="w-[80vw]  m-auto my-11 border border-black flex flex-col gap-5 abbu md:w-[80vw] md:h-[65vh] md:m-auto md:my-11 md:border md:border-black md:flex md:flex-row md:gap-20 md:abbu "
+      class="w-[80vw] m-auto my-11 flex flex-col gap-5 abbu md:w-[80vw] md:h-[65vh] md:m-auto md:my-11 md:flex md:flex-row md:gap-20 md:abbu"
     >
       <div
-        class="border border-black h-[100%]  flex flex-row justify-center items-center space-x-32 font-medium text-[#5239d0] md:border md:border-black md:h-[100%] md:w-[10%] md:flex md:flex-col md:justify-center md:items-center md:space-y-14 md:space-x-0 md:font-medium md:text-[#5239d0]"
+        class="h-[100%] flex flex-row justify-center items-center space-x-32 font-medium text-[#5239d0] md:h-[100%] md:w-[10%] md:flex md:flex-col md:justify-center md:items-center md:space-y-14 md:space-x-0 md:font-medium md:text-[#5239d0]"
       >
-        <img src="insta.svg" alt="instagram" />
-        <img src="linkedin.svg" alt="linkedin" />
+      <a href="https://www.instagram.com/YourInstagramUsername" target="_blank">
+        <img src="insta.svg" alt="Instagram" />
+      </a>
+      
+      <a href="https://www.linkedin.com/in/YourLinkedInUsername" target="_blank">
+        <img src="linkedin.svg" alt="LinkedIn" />
+      </a>
+      
 
-        <img src="github.svg" alt="github" />
+        <a href="https://github.com/Abraar-kanini" target="_blank">
+          <img src="github.svg" alt="GitHub" />
+        </a>
+        
       </div>
       <!-- about me  section image start -->
       <div
-        class="border border-black   flex justify-center items-center md:border md:border-black md:h-[100%] md:w-[40%] md:flex md:justify-center md:items-center md:relative"
+        class="flex justify-center items-center md:h-[100%] md:w-[40%] md:flex md:justify-center md:items-center md:relative"
       >
-        <div
-          class="w-[70%] h-[63%] border border-black rounded-egg bg-[#5239d0] overflow-hidden"
-        >
+        <div class="w-[70%] h-[63%] rounded-egg bg-[#5239d0] overflow-hidden">
           <img src="avator.png" alt="" class="object-cover rounded-egg" />
         </div>
-        <button
-         onclick="scrollToDown()" class="flex items-center justify-center w-[130px] rounded-lg h-10 transform hover:translate-y-1 cursor-pointer  absolute bottom-0 left-0"
-        >
-          <span>Scroll Down</span>
-          <span class="material-symbols-outlined transition duration-300 transform hover:translate-y-1 cursor-pointer">
-            keyboard_double_arrow_down
-            </span>
-        </button>
+        <!--  -->
       </div>
       <!-- about me section image end -->
       <!-- about me content start -->
       <div
-        class="border border-black  flex flex-col justify-center space-x-5 space-y-4 md:border md:border-black md:h-[100%] md:w-[40%] md:flex md:flex-col md:justify-center md:space-x-5 md:space-y-4"
+        class="flex flex-col justify-center space-x-5 space-y-4 md:h-[100%] md:w-[40%] md:flex md:flex-col md:justify-center md:space-x-5 md:space-y-4"
       >
         <h1></h1>
         <h2 class="text-2xl sm:text-5xl text-hsl font-medium">
@@ -93,8 +95,7 @@
         </h2>
         <h4 class="text-2xl font-medium text-gray-500">FullStack Developer</h4>
         <h5 class="text-gray-600">
-          Passionate frontend developer specializing in pixel-perfect web
-          design.
+          Passionate Full-stack Developer: Pixel-perfect frontend design with seamless backend integration. Let's bring your digital vision to life!
         </h5>
         <button
           class="flex items-center justify-center w-[180px] rounded-lg h-11 bg-[#5e4bbe] text-white hover:bg-[#5239d0]"
@@ -107,55 +108,52 @@
     </div>
     <!-- title and subtitle start -->
     <div
-      class="border border-black flex justify-center flex-col items-center my-5  m-auto abbu  md:border md:border-black md:flex md:justify-center md:flex-col md:items-center md:my-5 md:w-[30vw] md:m-auto md:abbu"
+      class="flex justify-center flex-col items-center my-5 m-auto abbu md:flex md:justify-center md:flex-col md:items-center md:my-5 md:w-[30vw] md:m-auto md:abbu"
     >
-      <h1 class="font-medium  text-2xl">
-        About <span class=" lg:inline">Me</span>
+      <h1 class="font-medium text-2xl">
+        About <span class="lg:inline">Me</span>
       </h1>
       <h2 class="text-gray-500 text-sm">My Introduction</h2>
     </div>
     <!-- title and subtitle ends -->
     <!-- about me image div start -->
-   <div class="w-[80vw] flex flex-col  border border-black m-auto  abbu  md:w-[80vw] md:flex  md:flex-row md:border md:border-black md:m-auto  md:abbu">
-      <div class=" border border-black p-4 md:w-[50%]  md:border md:border-black md:p-4">
+    <div
+      class="w-[80vw] flex flex-col m-auto abbu md:w-[80vw] md:flex md:flex-row md:m-auto md:abbu"
+    >
+      <div class="p-4 md:w-[50%] md:p-4">
         <img class="w-[90%] h-[100%]" src="aboutimg.png" alt="about image" />
       </div>
       <!-- about me image div end -->
       <!-- about me content div start -->
-      <div class="  border border-black p-6 md:w-[50%]  md:border md:border-black md:p-6">
+      <div id="about" class="p-6 md:w-[50%] md:p-6">
         <p class="text-gray-500">
-          An accomplished Frontend Developer with a passion for creating
-          seamless user experiences. With a solid foundation in HTML, CSS, and
-          JavaScript, I specialize in crafting visually captivating and
-          intuitively navigable websites. Leveraging my expertise in responsive
-          design and UI/UX principles, I bring concepts to life, ensuring each
-          project is a masterpiece of precision and functionality.
+          Experienced Full-stack Developer specializing in .NET Web API and
+          React.js. Proficient in crafting visually appealing and user-friendly
+          websites with a focus on responsive design and UI/UX principles.
+          Passionate about bringing concepts to life by seamlessly integrating
+          precision and functionality. Let's collaborate to create digital
+          experiences that exceed expectations.
         </p>
-        <div class="w-[100%]  border border-black flex my-5">
-          <div
-            class=" w-[33.33%] border border-black flex flex-col items-center"
-          >
+        <div class="w-[100%] flex my-5">
+          <div class="w-[33.33%] flex flex-col items-center">
             <h1 class="text-[#5239d0] font-bold text-lg">01+</h1>
             <h1 class="text-gray-500 text-sm">Years</h1>
             <h2 class="text-gray-500 text-sm">experience</h2>
           </div>
-          <div
-            class=" w-[33.33%] border border-black flex flex-col items-center"
-          >
+          <div class="w-[33.33%] flex flex-col items-center">
             <h1 class="text-[#5239d0] font-bold text-lg">04+</h1>
-            <h1 class="text-gray-500 text-sm">Completed </h1>
+            <h1 class="text-gray-500 text-sm">Completed</h1>
             <h2 class="text-gray-500 text-sm">Project</h2>
           </div>
-          <div
-            class=" w-[33.33%] border border-black flex flex-col items-center"
-          >
+          <div class="w-[33.33%] flex flex-col items-center">
             <h1 class="text-[#5239d0] font-bold text-lg">01</h1>
             <h1 class="text-gray-500 text-sm">Compnies</h1>
-            <h2 class="text-gray-500 text-sm"> Worked</h2>
+            <h2 class="text-gray-500 text-sm">Worked</h2>
           </div>
         </div>
         <button
-        onclick="downloadResume()" class="flex items-center justify-center w-[180px] rounded-lg h-11 bg-[#5e4bbe] text-white hover:bg-[#5239d0] my-6"
+          onclick="downloadResume()"
+          class="flex items-center justify-center w-[180px] rounded-lg h-11 bg-[#5e4bbe] text-white hover:bg-[#5239d0] my-6"
         >
           <span>Download Resume</span>
           <span class="material-symbols-outlined"> sim_card_download </span>
@@ -165,8 +163,8 @@
     </div>
 
     <!-- skill section title  start -->
-    <div
-      class="border border-black  m-auto flex flex-col items-center my-5 abbu md:border md:border-black md:w-[30vw] md:m-auto md:flex md:flex-col md:items-center md:my-5 md:abbu scrollToDown"
+    <div id="skills"
+      class="m-auto flex flex-col items-center my-5 abbu md:w-[30vw] md:m-auto md:flex md:flex-col md:items-center md:my-5 md:abbu scrollToDown"
     >
       <h1 class="font-bold text-2xl">Skills</h1>
       <h1 class="text-gray-500">My Technical Skills</h1>
@@ -175,7 +173,7 @@
 
     <!-- skill section start  -->
     <div
-      class="border border-black w-[60vw] m-auto flex flex-wrap gap-3 items-center justify-center abbu"
+      class="w-[60vw] m-auto flex flex-wrap gap-3 items-center justify-center abbu"
     >
       <button
         class="flex items-center justify-center w-[160px] rounded-lg h-11 bg-[#736ba1] text-white hover:bg-[#5239d0] my-6"
@@ -222,7 +220,7 @@
 
     <!-- qualification title and subtitle start -->
     <div
-      class="border border-black  m-auto flex flex-col items-center my-5 abbu lg:border lg:border-black lg:w-[30vw] lg:m-auto lg:flex lg:flex-col lg:items-center lg:my-5 lg:abbu"
+      class="m-auto flex flex-col items-center my-5 abbu  lg:w-[30vw] lg:m-auto lg:flex lg:flex-col lg:items-center lg:my-5 lg:abbu"
     >
       <h1 class="font-bold text-2xl">Qualification</h1>
       <h1 class="text-gray-500">My journey</h1>
@@ -230,34 +228,50 @@
     <!-- qualification title and subtitle ends -->
 
     <!-- education and work title -->
-    <div class="border border-black  flex items-center justify-evenly m-auto my-5 abbu
-    lg:border lg:border-black lg:w-[30vw] lg:flex lg:items-center lg:justify-evenly lg:m-auto lg:my-5 lg:abbu">
-      <span class="font-bold text-gray-500 flex items-center toggleColor cursor-pointer" data-type="education">
+    <div
+      class="flex items-center justify-evenly m-auto my-5 abbu  lg:w-[30vw] lg:flex lg:items-center lg:justify-evenly lg:m-auto lg:my-5 lg:abbu"
+    >
+      <span
+        class="font-bold text-gray-500 flex items-center toggleColor cursor-pointer"
+        data-type="education"
+      >
         Education
-        <span class="material-symbols-outlined ml-1 cursor-pointer">school</span>
+        <span class="material-symbols-outlined ml-1 cursor-pointer"
+          >school</span
+        >
       </span>
-      <span class="text-gray-500 flex items-center toggleColor cursor-pointer" data-type="work">
+      <span
+        class="text-gray-500 flex items-center toggleColor cursor-pointer"
+        data-type="work"
+      >
         Work
-        <span class="material-symbols-outlined ml-1 cursor-pointer">work_history</span>
+        <span class="material-symbols-outlined ml-1 cursor-pointer"
+          >work_history</span
+        >
       </span>
     </div>
-    
 
     <!-- education and work title ends -->
     <!-- education and work itenary start -->
-    <div class="border border-black  m-auto flex flex-wrap abbu md:border md:border-black md:w-[30vw] md:m-auto md:flex md:flex-wrap md:abbu">
+    <div
+      class="m-auto flex flex-wrap abbu md:w-[30vw] md:m-auto md:flex md:flex-wrap md:abbu"
+    >
       <div class="w-[49%] p-2">
         <h1 class="font-serif" id="educationTitle">Higher Secondary School</h1>
-        <h1 class="text-gray-500 text-sm" id="educationContent">Vetri Vekaas Salem</h1>
+        <h1 class="text-gray-500 text-sm" id="educationContent">
+          Vetri Vekaas Salem
+        </h1>
         <h1 class="flex items-center">
-          <span class="material-symbols-outlined mr-2 text-gray-500">calendar_month</span>
+          <span class="material-symbols-outlined mr-2 text-gray-500"
+            >calendar_month</span
+          >
           <span class="text-gray-500 my-4" id="educationDate">2017 - 2019</span>
         </h1>
       </div>
-      
+
       <div class="w-[0.5%] border border-[#6e57e0] relative">
         <div
-          class="absolute rounded-full h-4 w-4 top-1 bg-[#6e57e0] left-1/2 transform -translate-x-1/2 -translate-y-1/2 border border-black"
+          class="absolute rounded-full h-4 w-4 top-1 bg-[#6e57e0] left-1/2 transform -translate-x-1/2 -translate-y-1/2"
         >
           <!-- Your content here -->
         </div>
@@ -266,18 +280,22 @@
       <div class="w-[49%]"></div>
     </div>
 
-    <div class="border border-black  m-auto flex flex-wrap abbu abraar md:border md:border-black md:w-[30vw] md:m-auto md:flex md:flex-wrap md:abbu md:abraar">
+    <div
+      class="m-auto flex flex-wrap abbu abraar md:w-[30vw] md:m-auto md:flex md:flex-wrap md:abbu md:abraar"
+    >
       <div class="w-[49%]"></div>
       <div class="w-[0.5%] border border-[#6e57e0] relative">
         <div
-          class="absolute rounded-full h-4 w-4 top-1 bg-[#6e57e0] left-1/2 transform -translate-x-1/2 -translate-y-1/2 border border-black"
+          class="absolute rounded-full h-4 w-4 top-1 bg-[#6e57e0] left-1/2 transform -translate-x-1/2 -translate-y-1/2"
         >
           <!-- Your content here -->
         </div>
       </div>
       <div class="w-[49%] p-2">
         <h1 class="font-serif">B.Tech Information Technology</h1>
-        <h1 class="text-gray-500 text-sm">Mahendra Engineering College Namakkal</h1>
+        <h1 class="text-gray-500 text-sm">
+          Mahendra Engineering College Namakkal
+        </h1>
         <h1 class="flex items-center">
           <span class="material-symbols-outlined mr-2 text-gray-500"
             >calendar_month</span
@@ -287,7 +305,9 @@
       </div>
     </div>
 
-    <div class="border border-black  m-auto flex flex-wrap abbu abraar md:border md:border-black md:w-[30vw] md:m-auto md:flex md:flex-wrap md:abbu md:abraar">
+    <div
+      class="m-auto flex flex-wrap abbu abraar md:w-[30vw] md:m-auto md:flex md:flex-wrap md:abbu md:abraar"
+    >
       <div class="w-[49%] p-2">
         <h1 class="font-serif">.Net Core Web Api</h1>
         <h1 class="text-gray-500 text-sm">Udemy</h1>
@@ -300,7 +320,7 @@
       </div>
       <div class="w-[0.5%] border border-[#6e57e0] relative">
         <div
-          class="absolute rounded-full h-4 w-4 top-1 bg-[#6e57e0] left-1/2 transform -translate-x-1/2 -translate-y-1/2 border border-black"
+          class="absolute rounded-full h-4 w-4 top-1 bg-[#6e57e0] left-1/2 transform -translate-x-1/2 -translate-y-1/2"
         >
           <!-- Your content here -->
         </div>
@@ -308,17 +328,19 @@
       <div class="w-[49%]"></div>
     </div>
 
-    <div class="border border-black  m-auto flex flex-wrap abbu abraar md:border md:border-black md:w-[30vw] md:m-auto md:flex md:flex-wrap md:abbu md:abraar">
+    <div
+      class="m-auto flex flex-wrap abbu abraar md:w-[30vw] md:m-auto md:flex md:flex-wrap md:abbu md:abraar"
+    >
       <div class="w-[49%]"></div>
       <div class="w-[0.5%] border border-[#6e57e0] relative">
         <div
-          class="absolute rounded-full h-4 w-4 top-1 bg-[#6e57e0] left-1/2 transform -translate-x-1/2 -translate-y-1/2 border border-black"
+          class="absolute rounded-full h-4 w-4 top-1 bg-[#6e57e0] left-1/2 transform -translate-x-1/2 -translate-y-1/2"
         >
           <!-- Your content here -->
         </div>
       </div>
       <div class="w-[49%] p-2">
-        <h1 class="font-serif">FrontEnd Development </h1>
+        <h1 class="font-serif">FrontEnd Development</h1>
         <h1 class="text-gray-500 text-sm">YouTube</h1>
         <h1 class="flex items-center">
           <span class="material-symbols-outlined mr-2 text-gray-500"
@@ -332,8 +354,8 @@
 
     <!-- service section <start> -->
 
-    <div
-      class="border border-black  m-auto flex flex-col items-center my-5 abbu md:border md:border-black md:w-[30vw] md:m-auto md:flex md:flex-col md:items-center md:my-5 md:abbu"
+    <div id="service"
+      class="m-auto flex flex-col items-center my-5 abbu md:w-[30vw] md:m-auto md:flex md:flex-col md:items-center md:my-5 md:abbu"
     >
       <h1 class="font-bold text-2xl">Services</h1>
       <h1 class="text-gray-500">What I offer</h1>
@@ -343,11 +365,10 @@
 
     <!-- service section cards -->
     <div
-      class="justify-center items-center border border-black m-auto flex flex-wrap gap-9 p-4 relative md:w-[58vw] md:border md:border-black md:m-auto md:flex md:flex-wrap md:gap-9 md:p-4 md:relative"
+      class="justify-center items-center m-auto flex flex-wrap gap-9 p-4 relative md:w-[58vw] md:m-auto md:flex md:flex-wrap md:gap-9 md:p-4 md:relative"
     >
       <div
-        class=" border-gray-400 shadow-xl rounded-md p-10 abbu
-        md:w-[30%] md:border md:border-gray-400 md:shadow-xl md:rounded-md md:p-10 md:abbu"
+        class="border-gray-400 shadow-xl rounded-md p-10 abbu md:w-[30%] md:border md:border-gray-400 md:shadow-xl md:rounded-md md:p-10 md:abbu"
       >
         <span class="material-symbols-outlined mt-5 text-[#6e57e0]">
           code
@@ -365,8 +386,7 @@
         </div>
       </div>
       <div
-        class=" border border-gray-400 shadow-xl rounded-md p-10 abbu
-        md:w-[30%] md:border md:border-gray-400 md:shadow-xl md:rounded-md md:p-10 md:abbu"
+        class="border border-gray-400 shadow-xl rounded-md p-10 abbu md:w-[30%] md:border md:border-gray-400 md:shadow-xl md:rounded-md md:p-10 md:abbu"
       >
         <img class="mt-5" src="Ui/Ux.svg" alt="" />
         <h2 class="size-11 mt-3 font-serif font-bold">Ui/Ux Designer</h2>
@@ -382,8 +402,7 @@
         </div>
       </div>
       <div
-        class=" border border-gray-400 shadow-xl rounded-md p-10 abbu
-        md:w-[30%] md:border md:border-gray-400 md:shadow-xl md:rounded-md md:p-10 md:abbu"
+        class="border border-gray-400 shadow-xl rounded-md p-10 abbu md:w-[30%] md:border md:border-gray-400 md:shadow-xl md:rounded-md md:p-10 md:abbu"
       >
         <span class="material-symbols-outlined mt-5 text-[#6e57e0]"> tag </span>
         <h2 class="size-11 font-serif font-bold">Backemd Developer</h2>
@@ -400,8 +419,7 @@
       </div>
       <!-- card model start -->
       <div
-        class=" fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  flex flex-col space-y-5 p-4 hidden bg-white rounded-lg border-solid border-9 border-white outline-white shadow-white
-        md:fixed md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2  md:flex md:flex-col md:space-y-5 md:p-4 md:hidden md:bg-white md:rounded-lg md:border-solid md:border-9 md:border-white md:outline-white md:shadow-white"
+        class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col space-y-5 p-4 hidden bg-white rounded-lg border-solid border-9 border-white outline-white shadow-white md:fixed md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2 md:flex md:flex-col md:space-y-5 md:p-4 md:hidden md:bg-white md:rounded-lg md:border-solid md:border-9 md:border-white md:outline-white md:shadow-white"
         id="card-1"
       >
         <h1 class="font-semibold flex justify-between" id="cardTitle">
@@ -432,8 +450,8 @@
     </div>
     <!-- service section card ends -->
     <!-- project title start -->
-    <div
-      class="border border-black  m-auto flex flex-col items-center my-5 abbu md:border md:border-black md:w-[30vw] md:m-auto md:flex md:flex-col md:items-center md:my-5 md:abbu"
+    <div id="project"
+      class="m-auto flex flex-col items-center my-5 abbu md:w-[30vw] md:m-auto md:flex md:flex-col md:items-center md:my-5 md:abbu"
     >
       <h1 class="font-bold text-2xl">Projects</h1>
       <h1 class="text-gray-500">Most recent work</h1>
@@ -443,12 +461,11 @@
     <!-- project section start -->
 
     <div
-      class=" border outline-8 border-white shadow-xl m-auto flex flex-col p-5 rounded-xl abbu
-      md:w-[60vw] md:border md:outline-8 md:border-white md:shadow-xl md:m-auto md:flex-row md:p-5 md:rounded-xl md:abbu"
+      class="border outline-8 border-white shadow-xl m-auto flex flex-col p-5 rounded-xl abbu md:w-[60vw] md:border md:outline-8 md:border-white md:shadow-xl md:m-auto md:flex-row md:p-5 md:rounded-xl md:abbu"
     >
       <div class="md:w-[50%]">
         <div class="w-[80%] border-9 border-white rounded-lg shadow-lg">
-          <img  src="project2.svg" alt="project-1" id="projectImg" />
+          <img src="project2.svg" alt="project-1" id="projectImg" />
         </div>
       </div>
       <div class="md:w-[50%] md:space-y-6 md:relative">
@@ -461,7 +478,7 @@
           class="flex items-center justify-center w-[180px] rounded-lg h-11 bg-[#5e4bbe] text-white hover:bg-[#5239d0]"
         >
           <span class="m-5"
-            ><a href="https://google.com" id="projectLink"
+            ><a href="https://github.com/Abraar-kanini/Big-Bang-Assessment3" id="projectLink"
               >Project Link</a
             ></span
           >
@@ -475,9 +492,8 @@
     <!-- project section ends -->
 
     <!-- freelance content start -->
-    <div
-      class="border border-black  m-auto rounded-xl mt-7 flex bg-[#6e57e0]
-      md:border md:border-black md:w-[60vw] md:h-[40vh] md:m-auto md:rounded-xl md:mt-7 md:flex md:bg-[#6e57e0]"
+    <div id="contactus"
+      class="m-auto rounded-xl mt-7 flex bg-[#6e57e0] md:w-[60vw] md:h-[40vh] md:m-auto md:rounded-xl md:mt-7 md:flex md:bg-[#6e57e0]"
     >
       <div class="w-[50%] space-y-9 space-x-5">
         <h1></h1>
@@ -488,7 +504,7 @@
         <button
           class="flex items-center justify-center w-[180px] rounded-lg h-11 bg-[#ebeaf0] text-[#6e57e0] hover:bg-[#5239d0]"
         >
-          <span class="m-5">Contact Me</span>
+          <span class="m-5"><a href="mailto:jabraar01@gmail.com">Contact Me</a></span>
           <span
             class="material-symbols-outlined text-[#6e57e0] transition duration-300 transform hover:translate-x-1 cursor-pointer"
             >mail</span
@@ -508,8 +524,7 @@
 
     <!-- contact title start -->
     <div
-      class="border border-black  m-auto flex flex-col items-center my-5 abbu
-      md:border md:border-black md:w-[30vw] md:m-auto md:flex md:flex-col md:items-center md:my-5 md:abbu"
+      class="m-auto flex flex-col items-center my-5 abbu md:w-[30vw] md:m-auto md:flex md:flex-col md:items-center md:my-5 md:abbu"
     >
       <h1 class="font-bold text-2xl">Contact me</h1>
       <h1 class="text-gray-500">Get in touch</h1>
@@ -517,8 +532,7 @@
     <!-- contact title ends -->
 
     <!-- contact content start -->
-    <div class=" h-[10vh] border border-black m-auto flex md:w-[60vw] md:h-[10vh] md:border md:border-black md:m-auto md:flex">
-
+    <div class="h-[10vh] m-auto flex md:w-[60vw] md:h-[10vh] md:m-auto md:flex">
       <div class="p-3">
         <span
           class="material-symbols-outlined text-[#6e57e0] transition duration-300 transform hover:translate-x-1 cursor-pointer"
@@ -533,8 +547,9 @@
       </div>
     </div>
 
-    <div class=" h-[10vh] border border-black m-auto flex mt-2
-    md:w-[60vw] md:h-[10vh] md:border md:border-black md:m-auto md:flex md:mt-2">
+    <div
+      class="h-[10vh] m-auto flex mt-2 md:w-[60vw] md:h-[10vh] md:m-auto md:flex md:mt-2"
+    >
       <div class="p-3">
         <span
           class="material-symbols-outlined text-[#6e57e0] transition duration-300 transform hover:translate-x-1 cursor-pointer"
@@ -552,23 +567,26 @@
     <footer>
       <!-- <h1 class=" inline"></h1> -->
       <div
-        class="w-[98.8vw] h-[30vh] border border-black mt-3 flex flex-col  justify-center items-center bg-[#6e57e0] md:w-[98.8vw] md:h-[30vh] md:border md:border-black md:mt-3 md:flex md:flex-row md:justify-evenly md:items-start md:bg-[#6e57e0]"
+        class="w-[98.8vw] h-[30vh] mt-3 flex flex-col justify-center items-center bg-[#6e57e0] md:w-[98.8vw] md:h-[30vh] md:mt-3 md:flex md:flex-row md:justify-evenly md:items-start md:bg-[#6e57e0]"
       >
         <h1 class="mt-9 text-white font-bold">Abraar FullStack Developer</h1>
-        <h1 class="self-center mt-9 text-white font-bold md:self-end md:mb-9 md:text-white md:font-bold">By Abraar - CodeHype</h1>
+        <h1
+          class="self-center mt-9 text-white font-bold md:self-end md:mb-9 md:text-white md:font-bold"
+        >
+          By Abraar - CodeHype
+        </h1>
         <ul class="flex space-x-5 justify-center items-center mt-9">
           <li></li>
           <li class="text-white font-bold">Services</li>
           <li class="text-white font-bold">Portfolio</li>
           <li class="text-white font-bold">Contact</li>
           <li class="invert"><img src="insta.svg" alt="" /></li>
-          <li  class="invert"><img src="linkedin.svg" alt="" /></li>
+          <li class="invert"><img src="linkedin.svg" alt="" /></li>
           <li class="invert"><img src="github.svg" alt="" /></li>
         </ul>
       </div>
-       
     </footer>
     <!-- footer content ends -->
-<script src="script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
