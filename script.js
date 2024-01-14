@@ -1,3 +1,5 @@
+
+
 function resetCardContent() {
     let a = document.getElementById("cardTitle");
     a.innerHTML =
