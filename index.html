@@ -62,16 +62,16 @@
         class="h-[100%] flex flex-row justify-center items-center space-x-32 font-medium text-[#5239d0] md:h-[100%] md:w-[10%] md:flex md:flex-col md:justify-center md:items-center md:space-y-14 md:space-x-0 md:font-medium md:text-[#5239d0]"
       >
       <a href="https://www.instagram.com/YourInstagramUsername" target="_blank">
-        <img src="insta.svg" alt="Instagram" />
+        <img src="/asserts/insta.svg" alt="Instagram" />
       </a>
       
       <a href="https://www.linkedin.com/in/YourLinkedInUsername" target="_blank">
-        <img src="linkedin.svg" alt="LinkedIn" />
+        <img src="/asserts/linkedin.svg" alt="LinkedIn" />
       </a>
       
 
         <a href="https://github.com/Abraar-kanini" target="_blank">
-          <img src="github.svg" alt="GitHub" />
+          <img src="/asserts/github.svg" alt="GitHub" />
         </a>
         
       </div>
@@ -80,7 +80,7 @@
         class="flex justify-center items-center md:h-[100%] md:w-[40%] md:flex md:justify-center md:items-center md:relative"
       >
         <div class="w-[70%] h-[63%] rounded-egg bg-[#5239d0] overflow-hidden">
-          <img src="avator.png" alt="" class="object-cover rounded-egg" />
+          <img src="/asserts/avator.png" alt="" class="object-cover rounded-egg" />
         </div>
         <!--  -->
       </div>
@@ -121,7 +121,7 @@
       class="w-[80vw] flex flex-col m-auto abbu md:w-[80vw] md:flex md:flex-row md:m-auto md:abbu"
     >
       <div class="p-4 md:w-[50%] md:p-4">
-        <img class="w-[90%] h-[100%]" src="aboutimg.png" alt="about image" />
+        <img class="w-[90%] h-[100%]" src="/asserts/aboutimg.png" alt="about image" />
       </div>
       <!-- about me image div end -->
       <!-- about me content div start -->
@@ -152,10 +152,10 @@
           </div>
         </div>
         <button
-          onclick="downloadResume()"
+         
           class="flex items-center justify-center w-[180px] rounded-lg h-11 bg-[#5e4bbe] text-white hover:bg-[#5239d0] my-6"
         >
-          <span>Download Resume</span>
+        <a href="/assets/Abraar(Resume).pdf" download="Abraar-Resume.pdf"><span>Download Resume</span></a> 
           <span class="material-symbols-outlined"> sim_card_download </span>
         </button>
       </div>
@@ -465,7 +465,7 @@
     >
       <div class="md:w-[50%]">
         <div class="w-[80%] border-9 border-white rounded-lg shadow-lg">
-          <img src="project2.svg" alt="project-1" id="projectImg" />
+          <img src="/asserts/project2.svg" alt="project-1" id="projectImg" />
         </div>
       </div>
       <div class="md:w-[50%] md:space-y-6 md:relative">
@@ -514,7 +514,7 @@
       <div class="w-[50%]">
         <img
           class="w-[100%] h-[100%] object-contain"
-          src="freelance.png"
+          src="/asserts/freelance.png"
           alt=""
         />
       </div>
@@ -580,13 +580,207 @@
           <li class="text-white font-bold">Services</li>
           <li class="text-white font-bold">Portfolio</li>
           <li class="text-white font-bold">Contact</li>
-          <li class="invert"><img src="insta.svg" alt="" /></li>
-          <li class="invert"><img src="linkedin.svg" alt="" /></li>
-          <li class="invert"><img src="github.svg" alt="" /></li>
+          <li class="invert"><img src="/asserts/insta.svg" alt="" /></li>
+          <li class="invert"><img src="/asserts/linkedin.svg" alt="" /></li>
+          <li class="invert"><img src="/asserts/github.svg" alt="" /></li>
         </ul>
       </div>
     </footer>
     <!-- footer content ends -->
-    <script src="/script.js"></script>
+    <script>
+      
+
+function resetCardContent() {
+    let a = document.getElementById("cardTitle");
+    a.innerHTML =
+      "FrontEnd Developer <span class='material-symbols-outlined' onclick='closePopUp()'> dangerous </span>";
+    let b = document.getElementById("cardContent1");
+    b.innerHTML =
+      "<span class='material-symbols-outlined mr-2'>check_circle</span>Responsive Web Design";
+
+    let c = document.getElementById("cardContent2");
+    c.innerHTML =
+      "<span class='material-symbols-outlined mr-2'>check_circle</span>Interactive User Interfaces";
+
+    let d = document.getElementById("cardContent3");
+    d.innerHTML =
+      "<span class='material-symbols-outlined mr-2'>check_circle</span>SEO-Friendly Implementations";
+
+    let e = document.getElementById("cardContent4");
+    e.innerHTML =
+      "<span class='material-symbols-outlined mr-2'>check_circle</span>Accessibility and UX Enhancement";
+  }
+
+  function card1() {
+    let blurElements = document.querySelectorAll(".abbu");
+    blurElements.forEach((element) => {
+      element.style.filter = "blur(4px)";
+    });
+    let popUp = document.getElementById("card-1");
+    popUp.style.display = "block";
+
+    // Reset content
+    resetCardContent();
+  }
+
+  function closePopUp() {
+    let blurElements = document.querySelectorAll(".abbu");
+    blurElements.forEach((element) => {
+      element.style.filter = "none";
+    });
+    let popUp = document.getElementById("card-1");
+    popUp.style.display = "none";
+
+    // Reset content
+    resetCardContent();
+  }
+
+  function card2() {
+    let blurElements = document.querySelectorAll(".abbu");
+    blurElements.forEach((element) => {
+      element.style.filter = "blur(4px)";
+    });
+    let popUp = document.getElementById("card-1");
+    popUp.style.display = "block";
+
+    let a = document.getElementById("cardTitle");
+    a.innerHTML =
+      "Ui/UxDesigner <span class='material-symbols-outlined' onclick='closePopUp()'> dangerous </span>";
+
+    let b = document.getElementById("cardContent1");
+    b.innerHTML =
+      "<span class='material-symbols-outlined mr-2'>check_circle</span> Intuitive User Interface Design";
+
+    let c = document.getElementById("cardContent2");
+    c.innerHTML =
+      "<span class='material-symbols-outlined mr-2'>check_circle</span> Responsive and Mobile-First Design";
+
+    let d = document.getElementById("cardContent3");
+    d.innerHTML =
+      "<span class='material-symbols-outlined mr-2'>check_circle</span> Seamless User Experience Optimization";
+
+    let e = document.getElementById("cardContent4");
+    e.innerHTML =
+      "<span class='material-symbols-outlined mr-2'>check_circle</span> Accessibility and Usability Enhancements";
+  }
+
+  function card3() {
+    let blurElements = document.querySelectorAll(".abbu");
+    blurElements.forEach((element) => {
+      element.style.filter = "blur(4px)";
+    });
+    let popUp = document.getElementById("card-1");
+    popUp.style.display = "block";
+
+    let a = document.getElementById("cardTitle");
+    a.innerHTML =
+      "Backend Developer <span class='material-symbols-outlined' onclick='closePopUp()'> dangerous </span>";
+
+    let b = document.getElementById("cardContent1");
+    b.innerHTML =
+      "<span class='material-symbols-outlined mr-2'>check_circle</span> Scalable architecture for handling increased loads efficiently";
+
+    let c = document.getElementById("cardContent2");
+    c.innerHTML =
+      "<span class='material-symbols-outlined mr-2'>check_circle</span> Robust API development enabling seamless data exchange";
+
+    let d = document.getElementById("cardContent3");
+    d.innerHTML =
+      "<span class='material-symbols-outlined mr-2'>check_circle</span> Implementing strong data security measures.";
+
+    let e = document.getElementById("cardContent4");
+    e.innerHTML =
+      "<span class='material-symbols-outlined mr-2'>check_circle</span> Optimizing databases for fast and reliable data access.";
+  }
+
+  const img = document.getElementById("projectImg");
+  const projectHeading = document.getElementById("projectHeading");
+  const projectContent = document.getElementById("projectContent");
+  const projectLink = document.getElementById("projectLink");
+
+  let counter = 1;
+
+  setInterval(() => {
+    counter = (counter % 3) + 1;
+
+    // Apply fade-out effect before changing image
+    img.style.opacity = 0;
+
+    setTimeout(() => {
+      // Change the image source after the fade-out effect
+      img.src = `/asserts/project${counter}.svg`;
+
+      // Update content based on the image
+      if (counter === 1) {
+        projectHeading.innerText = "Skill Assessment";
+        projectContent.innerText = "A skill assessment platform allowing employees to take tests, view their scores, and compare results with peers for performance evaluation and growth tracking";
+        projectLink.href = "https://github.com/Abraar-kanini/Big-Bang-Assessment3";
+      } else if (counter === 2) {
+        projectHeading.innerText = "Travel Protal";
+        projectContent.innerText = "A comprehensive travel portal enabling users to book tours, agents to create packages, and admin control to grant agent access for seamless tour management and bookings.";
+        projectLink.href = "https://github.com/Abraar-kanini/Big-Bang-Assessment3";
+      } else if (counter === 3) {
+        projectHeading.innerText = "Hotel Booking System";
+        projectContent.innerText ="A robust hotel booking system with a backend API , facilitating seamless interactions for managing hotel reservations, guest information, and room availability.";
+        projectLink.href = "https://github.com/Abraar-kanini/Hotel_Booking_System";
+      }
+
+      // Apply fade-in effect after changing image
+      img.style.opacity = 1;
+    }, 500); // Change content after the fade-out effect (0.5s)
+  }, 3000);
+
+
+  const educationTitle = document.getElementById("educationTitle");
+const educationContent = document.getElementById("educationContent");
+const educationDate = document.getElementById("educationDate");
+const toggleColorElements = document.querySelectorAll('.toggleColor');
+const abraar = document.querySelectorAll('.abraar');
+
+toggleColorElements.forEach(element => {
+element.addEventListener('click', function() {
+// Remove existing 'purple' class from all elements
+toggleColorElements.forEach(el => el.classList.remove('purple'));
+
+// Add 'purple' class to the clicked element
+this.classList.add('purple');
+
+// Get the data-type attribute to determine the content to display
+const dataType = this.getAttribute('data-type');
+
+// Update content based on the clicked element
+if (dataType === 'education') {
+  educationTitle.innerText = 'Computer Science Engineering';
+  educationContent.innerText = 'GCET Kashmir';
+  educationDate.innerText = '2022 - 2026';
+  abraar.forEach(item => item.style.display = 'flex');
+} else if (dataType === 'work') {
+  educationTitle.innerText = 'Kanini Software Solution';
+  educationContent.innerText = 'Chennai';
+  educationDate.innerText = 'Feb-2023 Nov-2023';
+  abraar.forEach(item => item.style.display = 'none');
+}
+});
+});
+
+
+
+
+
+function toggleOpen() {
+  const nav = document.getElementById("nav");
+  let isTrue = nav.classList.contains("hidden");
+  if (isTrue) {
+    nav.classList.remove("hidden");
+    nav.classList.add("none");
+  } else {
+    nav.classList.remove("none");
+    nav.classList.add("hidden");
+  }
+}
+
+
+
+    </script>
   </body>
 </html>
